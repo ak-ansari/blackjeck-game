@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blckjeck</title>
+    <!-- bootstrap CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="shorcut icon" type="image/jpg" href="/assets/images/icon.jpg">
+
+    <!-- linked css file -->
+    <link rel="stylesheet" href="/blackjeck.css" />
+  </head>
+  <body>
+    <!-- main div containing whole content -->
+    <div class="maindiv">
+      <!-- headings -->
+      <h2>Black-jeck</h2>
+      <h3><span id="bj-results">Let's play</span></h3>
+      <div class="justforimage">
+        <!--  row 1 containing palying space -->
+
+        <div class="flex-bj-row-1">
+          <div id="your-box">
+            <h2>You: <span id="your-bj-result"> 0 </span></h2>
+          </div>
+          <div id="dealer-box">
+            <h2>Dealer: <span id="dealer-bj-result"> 0 </span></h2>
+          </div>
+        </div>
+
+        <!--  row 2 containing buttons -->
+
+        <div class="flex-bj-row-2">
+          <div>
+            <button class="btn btn-lg btn-primary me-2" id="bj-hit-btn">
+              Hit
+            </button>
+
+            <button class="btn btn-lg btn-warning me-2" id="bj-stand-btn">
+              Stand
+            </button>
+
+            <button class="btn btn-lg btn-danger" id="bj-deal-btn">Deal</button>
+          </div>
+        </div>
+      </div>
+      <!--row-3 containing table  -->
+
+      <div class="flex-bj-row-3">
+        <table class="table table-bordered">
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="Losses">0</span></td>
+            <td><span id="Draws">0</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--linked script file -->
+    <script src="/blackjack.js"></script>
+  </body>
+</html>

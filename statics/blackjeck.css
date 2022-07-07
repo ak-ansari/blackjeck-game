@@ -1,0 +1,34 @@
+/*  */
+.maindiv
+{
+    width: 75%;
+    border: 1px solid black;
+    margin:10px auto;
+    text-align: center;
+}
+.flex-bj-row-1 , .flex-bj-row-2, .flex-bj-row-3{
+    display: flex;
+    border: 1px solid black  ;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn {
+    margin: 5px 3px;}
+    .justforimage{color: white;
+        background-image: url(https://media.istockphoto.com/photos/poker-table-felt-background-picture-id510657755?b=1&k=20&m=510657755&s=612x612&w=0&h=m01xgZLr4pZAt4uE8ErYk9bCcgHuzWMVf9oYPEM8bHA=);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+.flex-bj-row-1 div {
+    min-height: 350px;
+    border: 1px solid black;
+    flex: 1;
+    
+}
+.table{
+    border: 1px solid black;
+    width: 30%;
+}
